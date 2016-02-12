@@ -4,7 +4,7 @@
   "description": "learn how to integrate Babel",
   "main": "index.js",
   "scripts": {
-    "test": "mocha build/test.js",
+    "test": "mocha build",
     "compile": "babel --presets es2015,stage-0 -d build/ src/",
     "watch": "babel --watch --presets es2015,stage-0 -d build/ src/"
   },
