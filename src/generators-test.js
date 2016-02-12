@@ -3,15 +3,14 @@ var assert = require('assert')
 import 'babel-polyfill'
 import 'babel-runtime/regenerator'
 
-
 function* greet() {
   yield "hello"
   yield "bienvenido"
   yield "ciao"
 }
 
-describe('greet generator function', () => {
-  it('generates several greetings', () => {
+describe('generator function', () => {
+  it('generates several results', () => {
     const greeter = greet()
 
     const result0 = greeter.next()
