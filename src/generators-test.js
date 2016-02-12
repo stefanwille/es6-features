@@ -1,7 +1,7 @@
-var assert = require('assert')
-
 import 'babel-polyfill'
 import 'babel-runtime/regenerator'
+
+import assert from 'assert'
 
 function* greet() {
   yield "hello"
