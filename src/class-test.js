@@ -24,12 +24,5 @@ describe('class syntax', () => {
     person.drink = 'Coffee'
     assert.equal('Coffee', person.drink)
   })
-
-  it('static', () => {
-    class Person {
-      static INITIAL_STATE = 'born'
-    }
-
-    assert.equal('born', Person.INITIAL_STATE)
-  })
 })
+
