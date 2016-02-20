@@ -10,6 +10,18 @@ describe('class syntax', () => {
     assert.equal('John Smith', new Person().name())
   })
 
+  it('constructor', () => {
+    class Person {
+      constructor(name) {
+        this.name = name
+      }
+      getName () {
+        return this.name
+      }
+    }
+    assert.equal('Stefan', (new Person('Stefan')).getName())
+  })
+
   it('properties', () => {
     class Person {
       get drink() {
