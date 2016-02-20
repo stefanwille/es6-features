@@ -12,7 +12,7 @@ describe('class syntax', () => {
 
   it('constructor', () => {
     class Person {
-      constructor(name) {
+      constructor (name) {
         this.name = name
       }
       getName () {
@@ -24,11 +24,11 @@ describe('class syntax', () => {
 
   it('properties', () => {
     class Person {
-      get drink() {
+      get drink () {
         return this._drink
       }
 
-      set drink(v) {
+      set drink (v) {
         this._drink = v
       }
     }

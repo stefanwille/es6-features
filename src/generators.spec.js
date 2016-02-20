@@ -3,7 +3,7 @@ import 'babel-runtime/regenerator'
 
 import assert from 'assert'
 
-function* greet() {
+function * greet () {
   yield 'hello'
   yield 'bienvenido'
   yield 'ciao'
@@ -33,7 +33,7 @@ describe('generator function', () => {
   it('returns a result that can be iterated with for..of', () => {
     const iterator = greet()
     const allValues = []
-    for(let n of iterator) {
+    for (let n of iterator) {
       allValues.push(n)
     }
     assert.deepEqual(['hello', 'bienvenido', 'ciao'], allValues)
